@@ -2,7 +2,7 @@ const http = require('http');
 const axios = require('axios');
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+//require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -23,9 +23,7 @@ app.get('/', cors(), function(req, res) {
     const port = process.env.PORT || 3000;
     res.writeHead(200, { 'Content-Type': 'text' });
     res.end("Response");
-
-
-})
+});
 app.listen(port, "0.0.0.0", function() {
     console.log("Listening on Port 3000");
 });
