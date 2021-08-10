@@ -3,6 +3,11 @@
         "start": "node main.js"
     },
 
+    "engines": {
+        "node": "5.0.0",
+        "npm": "4.6.1"
+    },
+
     "dependencies": {
         "axios": "^0.21.1",
         "express": "^4.17.1",
