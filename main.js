@@ -19,6 +19,13 @@ app.get('/path', cors(), function(req, res) {
 
 })
 
+app.get('/', cors(), function(req, res) {
+    const port = process.env.PORT || 3000;
+    res.writeHead(200, { 'Content-Type': 'text' });
+    res.end("Response");
+
+
+})
 app.listen(port, "0.0.0.0", function() {
     console.log("Listening on Port 3000");
 });
